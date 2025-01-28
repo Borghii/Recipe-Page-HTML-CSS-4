@@ -1,0 +1,81 @@
+
+*{margin:0px; padding:0px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+
+
+body {
+    font-family: 'Outfit', sans-serif; /* Fuente por defecto para el cuerpo */
+    color: #0000008e;;
+}
+
+
+.container{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe{
+    background-color: white;
+    width: 700px;
+    height: auto;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 20px;
+}
+
+
+.prep-time {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 25px;
+}
+
+.prep-time h3{
+    color: hsl(332, 51%, 32%);
+}
+
+
+.prep-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Young Serif', serif; /* Fuente para encabezados */
+    font-weight: 400;
+    
+}
+
+h1, h2{
+    margin: 20px 0;
+}
+h1{
+    color: hsl(24, 5%, 18%);
+    font-size: 40px;
+    
+}
+h2{
+    color:  hsl(14, 45%, 36%);
+}
+
+li{
+    padding-left: 10px ;
+    margin: 10px 25px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
