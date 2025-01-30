@@ -5,7 +5,9 @@
 body {
     font-family: 'Outfit', sans-serif; /* Fuente por defecto para el cuerpo */
     color: #0000008e;;
+    min-height: 100vh;
 }
+
 
 
 .container{
@@ -14,16 +16,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+
+    width: 100%;
+
 }
 
 .recipe{
     background-color: white;
-    width: 700px;
+    max-width:700px;
     height: auto;
     padding: 30px;
     margin: 100px;
     border-radius: 20px;
+
+
 }
+
+
+
 
 
 .prep-time {
@@ -43,12 +55,21 @@ body {
 
 ul li::marker {
     color: hsl(14, 45%, 36%);
+    font-size: 10px;
+}
+
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 900;
 }
 
 
 img{
+
     width: 100%;
     border-radius: 20px;
+
+
 }
 
 
@@ -78,4 +99,74 @@ li{
 p{
     font-size: 16px;
     font-weight: 400;
+}
+
+hr{
+    margin: 40px 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 0;
+}
+
+table{
+
+
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+    align-items: center;
+    align-content: center;
+    margin-top: 15px;
+}
+th, td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    width: 50%;
+}
+
+td{
+    color: hsl(14, 45%, 36%);
+    font-weight: 900;
+}
+
+th{
+    padding-left: 30px;
+    font-weight: 300;
+}
+
+
+tr{
+    text-align: left;
+  
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0; /* Menos espacio alrededor del contenedor */
+    }
+
+    .recipe {
+        padding: 30px; /* Reduce el espacio interior */
+        margin: 0px; /* Reduce el margen */
+        border-radius: 0%;
+    }
+
+    .recipe img {
+        border-radius: 0%;
+
+        width: calc(100% + 60px); /* Suma el doble del padding */
+        margin: -30px; /* Saca la imagen del padding */
+
+
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 32px; /* Reduce el tamaño del encabezado */
+    }
+
+    p {
+        font-size: 14px; /* Texto más pequeño */
+    }
 }
